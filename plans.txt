@@ -20,7 +20,23 @@ Another thought, I was considering saving the feedparser object created when fir
 But I quickly realized that I would only have access to the information available at creation. 
 So I'm going to be creating a new feedparser object every time update() is called. Maybe use it such that
 the feedparser object is passed as a var so that it isn't saved in dill?
-                                                 
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Next stop, Adding dill!
+
+Probably gonna make it work like the first attempt. Checks to see if there's a file present in the main directory.
+Otherwise, it makes one upon program exit. 
+
+Make a boolean var titled: saveExists
+When starting the program it'll check if there is say, a data.lf in the main directory. 
+If there isn't, then make saveExists false. 
+If there is, make it true. 
+
+Then use this to dictate whether or not we make a new file as the user closes the application. 
+
+Also change of plans, I'm going to have the user input the title of any RSS feeds as opposed to relying on
+the feed's title. This is because I immediately ran into the issue of feeds having a generic name (e.g. mangadex rss)
+
 General Class info
 ~~~~~~~~~~~~~~~~~~~
 

@@ -13,10 +13,10 @@ class LitFeed:
 
 
 	#Constructor for LitFeed, here we enter the title of the feed as well as its url.
-	def __init__(self, feedurl):
+	def __init__(self, feedurl, feedtitle):
 		self.feedurl = feedurl;
 		d = feedparser.parse(feedurl);
-		self.title = d.feed.title;
+		self.title = feedtitle
 		self.fetchEntries(d);
 
 	#takes a feedparser obj and extracts the entries. Runs fetchTitles and fetchURLs
