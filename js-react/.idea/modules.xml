@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../feedparserjs/.idea/feedparserjs.iml" filepath="$PROJECT_DIR$/../../feedparserjs/.idea/feedparserjs.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/js-react.iml" filepath="$PROJECT_DIR$/.idea/js-react.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../jsfeedparser/.idea/jsfeedparser.iml" filepath="$PROJECT_DIR$/../../jsfeedparser/.idea/jsfeedparser.iml" />
     </modules>
   </component>
 </project>

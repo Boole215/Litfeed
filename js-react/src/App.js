@@ -14,6 +14,7 @@ class App extends React.Component{
 
     }
 
+    //This is the callback function that I'm using to update the feedurls list.
     BoxitRoxit(newURL){
         console.log("This is the new URL: " + newURL);
 
@@ -31,11 +32,12 @@ class App extends React.Component{
                 {this.state.displayStart
                 &&
                 <StartPage currentURLs = {this.state.feedurls} addURL={this.BoxitRoxit}/>}
-                {this.state.displayStart
-                &&
-                <MainPage />
-
+                {
+                    !this.state.displayStart
+                    &&
+                    <MainPage feedlist={this.state.feedurls}/>
                 }
+
 
             </div>
             )

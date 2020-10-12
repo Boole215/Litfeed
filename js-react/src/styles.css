@@ -10,7 +10,13 @@
     max-height: 125px;
     margin-bottom: 10px;
 }
-
+a{
+    text-decoration:none;
+    color:#89bdd3
+}
+a:hover{
+    text-decoration:underline;
+}
 .contact-card p {
     margin-left: 10px;
     margin-top: 0;

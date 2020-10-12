@@ -9,5 +9,9 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="@types/node-fetch" level="application" />
+    <orderEntry type="library" name="@types/feedparser" level="application" />
+    <orderEntry type="module" module-name="jsfeedparser" />
+    <orderEntry type="module" module-name="feedparserjs" />
   </component>
 </module>
